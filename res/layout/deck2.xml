@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+ 	<ImageView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/brown1"
+		android:src="@drawable/brown" />
+
+	<ImageView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/brown2"
+		android:src="@drawable/brown" />
+
+	<ImageView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/spinner1"
+		android:src="@drawable/wheel" />
+
+
+	<ImageView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/spinner2"
+		android:src="@drawable/wheel" />
+    
+	<ImageView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/blank"
+		android:src="@drawable/pixel" />
+	
+    
+  <ImageView
+	    android:id="@+id/tape"
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:src="@drawable/pixel" />  
+    
+    
+<LinearLayout android:id="@+id/labelholder" 
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+ 	android:orientation="vertical">
+     <TextView 
+        android:id="@+id/topblock" 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+       >
+ </TextView>
+    <TextView android:id="@+id/label" 
+        android:layout_width="fill_parent"
+        android:text="Retro Tape Deck"
+        android:layout_height="0dp">
+ 	</TextView>
+    <TextView 
+        android:id="@+id/bottomblock" 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp">
+ </TextView>
+    
+    
+</LinearLayout>
+    
+
+	
+	<Button android:text="" android:textColor="#ffffff"
+	    android:alpha="0.5"
+		android:onClick="clickHandler" android:id="@+id/prev"
+		android:shadowColor="#000000" android:background="@drawable/button_previous"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	
+	<Button android:text="" android:textColor="#ffffff"
+		android:onClick="clickHandler" android:id="@+id/play"
+		android:alpha="0.5"
+		android:shadowColor="#000000" android:background="@drawable/button_play"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	<Button android:text="" android:textColor="#ffffff"
+	    android:alpha="0.5"
+		android:onClick="clickHandler" android:background="@drawable/button_next"
+		android:id="@+id/next" android:shadowColor="#000000"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	
+	
+
+		
+		<SeekBar android:id="@+id/trackbar" android:layout_width="fill_parent"
+		    
+			android:layout_height="wrap_content" android:thumb="@drawable/seek"
+			android:progressDrawable="@drawable/pixel"
+			android:layout_alignParentBottom="true" android:layout_marginRight="60dip"
+			android:layout_marginLeft="60dip" android:layout_marginBottom="0dip"
+			android:maxHeight="2dip" android:minHeight="2dip" android:max="100" />
+	
+</FrameLayout>
